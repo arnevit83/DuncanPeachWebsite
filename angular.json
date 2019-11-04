@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "LucyEdgeApp": {
+    "DuncanPeachApp": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "LucyEdgeApp:build"
+            "browserTarget": "DuncanPeachApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "LucyEdgeApp:build:production"
+              "browserTarget": "DuncanPeachApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "LucyEdgeApp:build"
+            "browserTarget": "DuncanPeachApp:build"
           }
         },
         "test": {
@@ -147,7 +147,7 @@
         }
       }
     },
-    "LucyEdgeApp-e2e": {
+    "DuncanPeachApp-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -156,11 +156,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "LucyEdgeApp:serve"
+            "devServerTarget": "DuncanPeachApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "LucyEdgeApp:serve:production"
+              "devServerTarget": "DuncanPeachApp:serve:production"
             }
           }
         },
@@ -176,5 +176,5 @@
       }
     }
   },
-  "defaultProject": "LucyEdgeApp"
+  "defaultProject": "DuncanPeachApp"
 }
