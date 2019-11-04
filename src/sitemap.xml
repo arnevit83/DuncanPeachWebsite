@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Duncanpeach.com/</loc>
+    <loc>https://lucyedge.com/</loc>
+    <lastmod>2019-11-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://lucyedge.com/Skills</loc>
+    <lastmod>2019-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://lucyedge.com/Successes</loc>
+    <lastmod>2019-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://lucyedge.com/Testimonials</loc>
+    <lastmod>2019-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://lucyedge.com/Inspo</loc>
+    <lastmod>2019-11-04</lastmod>
+  </url>
+    <url>
+    <loc>https://lucyedge.com/Loves</loc>
+    <lastmod>2019-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://lucyedge.com/Contact</loc>
     <lastmod>2019-11-04</lastmod>
   </url>
 </urlset>
