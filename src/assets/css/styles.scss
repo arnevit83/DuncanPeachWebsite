@@ -16,8 +16,8 @@
 
 //Sass Variables
 
-$primary: #7D9C9F;
-$secondary: #AD235E;
+$primary: #B0282C;
+$secondary: #fba0a0;
 $sidebar-base-width: 17rem;
 $white: #FFFFFF;
 $defaultFont: 'Open Sans', sans-serif;
@@ -165,7 +165,7 @@ box-shadow: 2px 0px 5px 0px rgba(102,102,102,0.2);
 	#sideNav .navbar-brand .img-profile {
 		max-width: 10rem;
 		max-height: 10rem;
-		border: 7px solid #bdd8da;width: 500px;background-color: white;
+		border: 7px solid #df5353;width: 500px;background-color: white;
 	}
 	#sideNav .navbar-collapse {
 		display: -webkit-box;
@@ -204,19 +204,26 @@ section.resume-section {
 	text-shadow:1px 1px #21272d24;
 }
 
-.no-webp .resume-section {
- background: url("~/assets/images/HomePic.jpg") no-repeat center -100px fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.webp .resume-section {
- background: url("~/assets/images/HomePic.webp") no-repeat center -100px fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+// .no-webp .resume-section {
+//  background: url("~/assets/images/HomePic.jpg") no-repeat center -100px fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+// .webp .resume-section {
+//  background: url("~/assets/images/HomePic.webp") no-repeat center -100px fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+.secondslider{
+	-webkit-box-shadow: 0px -4px 5px 0px rgba(50, 50, 50, 0.45);
+-moz-box-shadow:    0px -4px 5px 0px rgba(50, 50, 50, 0.45);
+box-shadow:         0px -4px 5px 0px rgba(50, 50, 50, 0.45);
+z-index: 2;
+position: relative;
 }
 
 
@@ -285,7 +292,7 @@ a:active {
 				max-width: 10rem;
 				max-height: 10rem;
 
-				border:7px solid #bdd8da;
+				border:7px solid #df5353;
 			}
 		}
 		.navbar-collapse {
@@ -375,28 +382,9 @@ footer a:hover,footer a:active,footer a:focus {
 		text-decoration: none;
 }
 
-.tabMore{
-	background-color: #FFFFFF;
-	    position: relative;
-	    top: -20px;
-	    -webkit-border-top-right-radius: 50px;
-	    -webkit-border-top-left-radius: 50px;
-	    -moz-border-radius-topright: 50px;
-	    -moz-border-radius-topleft: 50px;
-	    border-top-right-radius: 50px;
-	    border-top-left-radius: 50px;
-	    margin: 0 auto;
-	    width: 40px;
-	    text-align: center;
-	    padding: 4px;
-			font-size: 11px;
-			margin-bottom: -20px!important;
-}
 
 @include media-breakpoint-down(xs) {
-.tabMore{
-	display: none;
-}
+
 
 #Clients .col-sm-8{
 padding:20px;
@@ -414,7 +402,7 @@ min-height: auto!important;
 
 background-image: none!important;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+100;Orange+3D */
-background-color: #BDD8DA !important;; /* Old browsers */
+background-color: #df5353 !important;; /* Old browsers */
 
 }
 .ScrollUp:hover{
@@ -441,7 +429,12 @@ border-radius: 3px; /* future proofing */
 
 }
 //homepage
+	.FirstSlide{
+	position: absolute;
+	z-index: 2;
+		}
 
+		
 .homepageUL{
 	padding-top: 10px;
 	font-weight: 600;
@@ -495,7 +488,7 @@ background-color:#ECECEC;
 	    background: white;
 	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e26887', endColorstr='#AD235E',GradientType=0 );
 	    margin-bottom: 20px;
-	    border: #BDD8DA    solid 7px;
+	    border: #df5353    solid 7px;
 	}
 	.circle-icon svg{
 	font-size: 50px;
@@ -539,7 +532,7 @@ cursor: pointer;
 background-color:#7D9C9F ;
 }
 .ColourGrid:nth-of-type(even) {
-	background-color: #BDD8DA;
+	background-color: #df5353;
 }
 
 
@@ -758,3 +751,23 @@ testimonials{
 
 	    text-transform: uppercase;
 }
+
+
+
+ .tinyfade { position: relative }
+ .tinyfade>* { position: relative; width: 100%; opacity: 0; float: left; pointer-events: none }
+ .tinyfade>:not(:first-child) { position: absolute; top: 0; left: 0; right: 0 }
+ .tinyfade:not(.tinyfade-js)>:first-child { opacity: 1; pointer-events: auto }
+ .tinyfade-current { z-index: 2; opacity: 1; pointer-events: auto }
+ .tinyfade-last { z-index: 1; opacity: 1 }
+ .tinyfade img {   -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	   -o-background-size: cover;
+	   background-size: cover;
+	max-height: calc(100vh - 20px)}
+
+ //  background: url("~/assets/images/HomePic.jpg") no-repeat center -100px fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;

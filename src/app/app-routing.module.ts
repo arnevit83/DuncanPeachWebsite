@@ -1,27 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HeaderComponent } from './Header/app.Header';
 import { HomeComponent } from './ContentArea/app.Home';
-
 import { SkillsComponent } from './ContentArea/app.Skills';
 import { SuccessesComponent } from './ContentArea/app.Successes';
-
-
-
-
-
 import { TestimonialsComponent } from './ContentArea/app.Testimonials';
 import { LovesComponent } from './ContentArea/app.Loves';
 import { ContactComponent } from './ContentArea/app.Contact';
-
-
 import { InspoComponent } from './ContentArea/app.Inspo';
-
-
 import { PageNotFoundComponent } from './PageNotFound/app.PageNotFound';
-
-
-
 const routes: Routes = [{path: '', component:  HomeComponent },
                         {path: 'Skills', component:  SkillsComponent },
                         {path: 'Successes', component:  SuccessesComponent },

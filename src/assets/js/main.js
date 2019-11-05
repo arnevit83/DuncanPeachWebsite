@@ -7,12 +7,7 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 $(document).ready(function() {
-    $('#tabMore').click(function() {
-        $('html, body').animate({
-            scrollTop: $(document).height()
-        }, 'slow');
-        return false;
-    });
+
     $('.ScrollUp').click(function() {
         $('html, body').animate({
             scrollTop: 0
@@ -44,5 +39,12 @@ $(document).ready(function() {
 setTimeout(function(){ 
 
     $(".app-loading").hide();
-
+    let tf = new Tinyfade(
+        
+                ".tinyfade", 
+        
+                5000,       
+        
+                1000    
+              );
 },500);
