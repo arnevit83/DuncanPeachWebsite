@@ -19,7 +19,7 @@ import { InspoComponent } from './ContentArea/app.Inspo';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -42,7 +42,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    FontAwesomeModule
+    //FontAwesomeModule
     // ,
     // ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],

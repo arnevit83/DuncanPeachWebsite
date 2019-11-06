@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
 import { Meta }     from '@angular/platform-browser';
-import { faChartLine } from '@fortawesome/free-solid-svg-icons';
-import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
+//import { faChartLine } from '@fortawesome/free-solid-svg-icons';
+//import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -11,8 +11,8 @@ import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 })
 
 export class SkillsComponent {
-  fachartline = faChartLine;
-  faPencilAlt = faPencilAlt;
+ // fachartline = faChartLine;
+ // faPencilAlt = faPencilAlt;
 
 
   public constructor(private titleService: Title, private meta: Meta) {

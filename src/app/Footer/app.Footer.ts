@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+// import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import {formatDate } from '@angular/common';
 @Component({
   selector: 'footer',
   templateUrl: './footer.html',
 })
 export class FooterComponent {
-    faChevronDown = faChevronUp;
+  //  faChevronDown = faChevronUp;
     jstoday = '';
     today= new Date();
     constructor() {

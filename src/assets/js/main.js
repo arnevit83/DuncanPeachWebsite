@@ -12,16 +12,25 @@ $(document).ready(function() {
 
 
     $('.ScrollUp').click(function() {
-        $('html, body').animate({
+        $([document.documentElement, document.body]).animate({
             scrollTop: 0
+        },  'slow');
+        return false;
+     
+    });
+    $('.HomeScoll').click(function() {
+        $('html, body').animate({
+            scrollTop: $(".secondslider").offset().top
         }, 'slow');
         return false;
     });
     $(document).scroll(function() {
         var y = $(this).scrollTop();
         if (y > 10) {
-            $(".HomeScoll").fadeOut(1500);
+            $(".HomeScoll").fadeOut(500);
            
+        } else {
+            $('.HomeScoll').fadeIn();
         };
         if (y > 800) {
             $('.ScrollUp').fadeIn();
@@ -45,7 +54,7 @@ $(document).ready(function() {
 });
 setTimeout(function(){ 
     
-    $(".app-loading").hide();
+    $(".app-loading").fadeOut();
         
     let tf = new Tinyfade(
         
