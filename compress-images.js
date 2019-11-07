@@ -36,9 +36,9 @@ imagemin(['./src/assets/images uncompressed/*.jpg'], outputFolder, {
 
 
 imagemin(['./src/assets/images uncompressed/*.svg'], outputFolder, {
-  use: [
-    imageminSvgo({plugins: [{removeViewBox: false}]})
-  ]
+  // use: [
+  //   imageminSvgo({plugins: [{removeViewBox: false}]})
+  // ]
 }).then(() => {
-    console.log('SVG Images optimized');
+    console.log('SVG Images not-optimized');
 });
