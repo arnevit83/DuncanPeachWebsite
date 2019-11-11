@@ -18,12 +18,14 @@ export class TestimonialsComponent {
         //  this.meta.updateTag({ name: 'description', content: '' });
         //  this.meta.updateTag({ name: 'keywords', content: '' });  }
       }
-        ngOnInit() {
-          $(function() {
+      ngOnInit() {
+        $(function() {
+         
+       
+          setTimeout(function() {
             var spanWidth = $('.text span').width();
             $('.text').animate( { width: spanWidth }, 1000 );
-          });
-        };
-
-
+        }, 100);
+        });
+      };
 }

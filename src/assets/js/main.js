@@ -32,7 +32,7 @@ $(document).ready(function() {
         } else {
             $('.HomeScoll').fadeIn();
         };
-        if (y > 800) {
+        if (y > 300) {
             $('.ScrollUp').fadeIn();
         } else {
             $('.ScrollUp').fadeOut();

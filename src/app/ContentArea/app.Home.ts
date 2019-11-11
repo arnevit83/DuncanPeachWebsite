@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
 import { Meta }     from '@angular/platform-browser';
 
+declare var $: any;
 // import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 // import { faPhone } from '@fortawesome/free-solid-svg-icons';
 // import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -19,6 +20,7 @@ export class HomeComponent {
     public constructor(private titleService: Title, private meta: Meta ) {
         //  this.titleService.setTitle( "" );
         //  this.meta.updateTag({ name: 'description', content: '' });
-        //  this.meta.updateTag({ name: 'keywords', content: '' });
-       }
+        //  this.meta.updateTag({ name: 'keywords', content: '' });  }
+      }
+    
 }

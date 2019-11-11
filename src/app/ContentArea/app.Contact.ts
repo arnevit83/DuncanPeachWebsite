@@ -6,7 +6,7 @@ import { Meta }     from '@angular/platform-browser';
 // import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 // import { faSkype } from '@fortawesome/free-brands-svg-icons';
 // import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
+declare var $: any;
 
 @Component({
   selector: 'Contact',
@@ -20,8 +20,19 @@ export class ContactComponent {
   // faEnvelope = faEnvelope;
   // falinkedin = faLinkedin;
   public constructor(private titleService: Title , private meta: Meta) {
-      //  this.titleService.setTitle( "" );
+         //  this.titleService.setTitle( "" );
         //  this.meta.updateTag({ name: 'description', content: '' });
         //  this.meta.updateTag({ name: 'keywords', content: '' });  }
+      }
+      ngOnInit() {
+        $(function() {
+         
+       
+          setTimeout(function() {
+            var spanWidth = $('.text span').width();
+            $('.text').animate( { width: spanWidth }, 1000 );
+        }, 100);
+        });
+      };
 }
-}
+  
