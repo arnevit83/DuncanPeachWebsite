@@ -18,12 +18,25 @@ export class LovesComponent {
       }
       ngOnInit() {
         $(function() {
-         
+          function galleryfeedkFunc() {
+            window.setTimeout(function() {
+              $(".gallery-feed").find("a").replaceWith(function() {
+                return $(this).contents();
+              });
+
+            }, 3000);
+          };
        
           setTimeout(function() {
             var spanWidth = $('.text span').width();
             $('.text').animate( { width: spanWidth }, 1000 );
         }, 100);
+            $('.gallery-feed').spectragram('getUserFeed', {
+        complete: galleryfeedkFunc(),
+        max: 8,
+        size: "small",
+        wrapEachWith: "<div class='IGFeed'></div>"
+      });
         });
       };
 }
