@@ -1,105 +1,209 @@
-  <!--
+<!--
       Use https://www.willpeavy.com/minifier/
   -->
-  <!doctype html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <!-- Default TAGS -->
-    <base href="/">
+    <base href="/" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Loading CSS Style -->
-    <style type="text/css">body,html{height:100%}
+    <style type="text/css">
+      body,
+      html {
+        height: 100%;
+      }
       .app-loading {
         position: fixed;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      bottom: 0;
-      z-index: 10000;
-      background: white;
-      top: 0;
-      left: 0;
-      right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        z-index: 10000;
+        background: white;
+        top: 0;
+        left: 0;
+        right: 0;
       }
-  .app-loading .spinner{height:100px;width:100px;animation:rotate 2s linear infinite;transform-origin:center center;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto}@media (min-width:992px){body{padding-top:0;padding-left:17rem}}</style>
+      .app-loading .spinner {
+        height: 100px;
+        width: 100px;
+        animation: rotate 2s linear infinite;
+        transform-origin: center center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 0;
+          padding-left: 17rem;
+        }
+      }
+    </style>
     <!-- COMMON TAGS -->
-    <meta charset="utf-8">
-    <title>Freelance Web Developer, Full Stack Web Developer, E-Commerce, PPC + SEO, Eco Brands and Business Owner</title>
+    <meta charset="utf-8" />
+    <title>
+      Web3 Developer, Full Stack Web Developer, E-Commerce, PPC + SEO, Eco
+      Brands and Business Owner
+    </title>
     <!-- Search Engine -->
-    <meta name="description" content="Need a website built without any drama? Just need to know it’s handled? ">
-    <meta name="image" content="/assets/images/logo.png">
+    <meta
+      name="description"
+      content="Need a website built without any drama? Just need to know it’s handled? "
+    />
+    <meta name="image" content="/assets/images/logo.png" />
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Freelance Web Developer, Full Stack Web Developer, E-Commerce, PPC + SEO, Eco Brands and Business Owner">
-    <meta itemprop="description" content="Need a website built without any drama? Just need to know it’s handled? ">
-    <meta itemprop="image" content="/assets/images/logo.png">
+    <meta
+      itemprop="name"
+      content="Freelance Web Developer, Full Stack Web Developer, E-Commerce, PPC + SEO, Eco Brands and Business Owner"
+    />
+    <meta
+      itemprop="description"
+      content="Need a website built without any drama? Just need to know it’s handled? "
+    />
+    <meta itemprop="image" content="/assets/images/logo.png" />
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Freelance Web Developer, Full Stack Web Developer, E-Commerce, PPC + SEO, Eco Brands and Business Owner">
-    <meta name="twitter:description" content="Need a website built without any drama? Just need to know it’s handled? ">
-    <meta name="twitter:site" content="@arnevit">
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Freelance Web Developer, Full Stack Web Developer, E-Commerce, PPC + SEO, Eco Brands and Business Owner"
+    />
+    <meta
+      name="twitter:description"
+      content="Need a website built without any drama? Just need to know it’s handled? "
+    />
+    <meta name="twitter:site" content="@arnevit" />
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="Freelance Web Developer, Full Stack Web Developer, E-Commerce, PPC + SEO, Eco Brands and Business Owner">
-    <meta name="og:description" content="Need a website built without any drama? Just need to know it’s handled? ">
-    <meta name="og:image" content="/assets/images/logo.png">
-    <meta name="og:url" content="www.Duncanpeach.com">
-    <meta name="og:site_name" content="Duncan Peach">
-    <meta name="og:locale" content="en_GB">
-    <meta name="og:type" content="website">
+    <meta
+      name="og:title"
+      content="Freelance Web Developer, Full Stack Web Developer, E-Commerce, PPC + SEO, Eco Brands and Business Owner"
+    />
+    <meta
+      name="og:description"
+      content="Need a website built without any drama? Just need to know it’s handled? "
+    />
+    <meta name="og:image" content="/assets/images/logo.png" />
+    <meta name="og:url" content="www.Duncanpeach.com" />
+    <meta name="og:site_name" content="Duncan Peach" />
+    <meta name="og:locale" content="en_GB" />
+    <meta name="og:type" content="website" />
     <!-- Fav Icons -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/assets/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/assets/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/assets/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/icons/favicon-16x16.png"
+    />
     <!-- manifest Progressive Web App -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#b30000">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#b30000" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/assets/icons/ms-icon-144x144.png"
+    />
     <!-- Structured data -->
-      <script type="application/ld+json">
+    <script type="application/ld+json">
       {
-      "@context": "http://schema.org/",
-      "@type": "Person",
-      "name": "Duncan peach",
-      "url": "https://www.DuncanPeach.com",
-      "image": "https://www.Duncanpeach.com/assets/images/ProfilePicture.jpg",
-      "sameAs": [
-       
-        "https://twitter.com/arnevit",
-        "https://www.linkedin.com/in/webdev1",
-        "https://www.yogaclicks.com"
-      ],
-      "jobTitle": "Freelance Web Developer, Full Stack Web Developer, E-Commerce, PPC + SEO, Eco Brands and Business Owner",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Duncan Peach"
-      }
-      }
-      </script>
-      <script type="application/ld+json">
-  
-      {
-      "@context": "http://schema.org/",
-      "@type": "WebSite",
-      "name": "Duncan Peach",
-      "url": "https://www.duncanpeach.com"
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Duncan peach",
+        "url": "https://www.DuncanPeach.com",
+        "image": "https://www.Duncanpeach.com/assets/images/ProfilePicture.jpg",
+        "sameAs": [
+          "https://twitter.com/arnevit",
+          "https://www.linkedin.com/in/webdev1",
+          "https://www.yogaclicks.com"
+        ],
+        "jobTitle": "Freelance Web Developer, Full Stack Web Developer, E-Commerce, PPC + SEO, Eco Brands and Business Owner",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Duncan Peach"
+        }
       }
     </script>
     <script type="application/ld+json">
-  
-  
+      {
+        "@context": "http://schema.org/",
+        "@type": "WebSite",
+        "name": "Duncan Peach",
+        "url": "https://www.duncanpeach.com"
+      }
+    </script>
+    <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "ProfessionalService",
@@ -122,13 +226,7 @@
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           "opens": "09:00",
           "closes": "17:30"
         },
@@ -138,27 +236,24 @@
           "https://www.yogaclicks.com"
         ]
       }
-      </script>
+    </script>
     <!-- Faster Google font loading -->
-      <link rel="dns-prefetch" href="//fonts.googleapis.com/">
-  
+    <link rel="dns-prefetch" href="//fonts.googleapis.com/" />
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
   </head>
   <body>
-    <app-root> <!-- selector from app.component.ts -->
-  
-     
-  
-  
-    </app-root>
-        <!-- loading layout replaced by app after startupp -->
-        <div class="app-loading">
-        
-          <i class="fad fa-spinner fa-2x fa-spin"  style="--fa-primary-color: #dd3c64; --fa-secondary-color: #AD235E;"></i>
-        </div>
-  
+    <app-root> <!-- selector from app.component.ts --> </app-root>
+    <!-- loading layout replaced by app after startupp -->
+    <div class="app-loading">
+      <i
+        class="fad fa-spinner fa-2x fa-spin"
+        style="--fa-primary-color: #dd3c64; --fa-secondary-color: #ad235e"
+      ></i>
+    </div>
+
     <noscript>
-    You do not have JS enabled.  Since this is an Angular based website, it won't work with out JS :-S
+      You do not have JS enabled. Since this is an Angular based website, it
+      won't work with out JS :-S
     </noscript>
   </body>
-  </html>
-  
+</html>
